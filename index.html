@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LKW Ersatzteil</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 20px;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .buy-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #0070ba;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      footer {
+        text-align: center;
+        font-size: 14px;
+        color: #888;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+        .buy-btn {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>LKW Ersatzteil</h1>
+        <img src="produktbild.jpg" alt="Produktbild" />
+      </header>
+
+      <main>
+        <p>
+          Dies ist ein hochwertiges Ersatzteil für schwere LKWs. Es bietet eine
+          lange Lebensdauer, perfekte Passform und ist sofort versandbereit.
+        </p>
+
+        <!-- PayPal Button -->
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_blank"
+        >
+          <input type="hidden" name="cmd" value="_xclick" />
+          <input
+            type="hidden"
+            name="business"
+            value="YOUR_PAYPAL_EMAIL@example.com"
+          />
+          <input type="hidden" name="item_name" value="LKW Ersatzteil" />
+          <input type="hidden" name="amount" value="99.99" />
+          <input type="hidden" name="currency_code" value="EUR" />
+          <button type="submit" class="buy-btn">Jetzt kaufen</button>
+        </form>
+      </main>
+
+      <footer>
+        &copy; 2025 LKW Ersatzteile GmbH. Alle Rechte vorbehalten.
+      </footer>
+    </div>
+  </body>
+</html>
